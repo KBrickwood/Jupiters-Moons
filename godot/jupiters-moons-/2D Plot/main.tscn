@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://daa8sn8lwvyhy"]
+
+[ext_resource type="Script" uid="uid://cwsge38mofp3e" path="res://2D Plot/Main.gd" id="1_duvo2"]
+[ext_resource type="Script" uid="uid://c3c8pj5s5fgo0" path="res://2D Plot/OrbitPlot.gd" id="1_pk53k"]
+
+[node name="Main" type="Node2D" unique_id=1702420146]
+script = ExtResource("1_duvo2")
+eccentricity = 0.56
+integrator = "RK4"
+
+[node name="OrbitPlot" type="Node2D" parent="." unique_id=771659775]
+script = ExtResource("1_pk53k")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1138741321]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=530778242]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
